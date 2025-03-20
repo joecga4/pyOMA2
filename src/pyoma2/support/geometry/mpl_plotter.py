@@ -361,7 +361,7 @@ class Geo2MplPlotter(MplPlotter[Geometry2]):
         # Select the (real) mode shape
         fn = self.res.Fn[int(mode_nr - 1)]
         phi = self.res.Phi[:, int(mode_nr - 1)].real * scaleF
-
+        
         # APPLY POINTS TO SENSOR MAPPING
         df_phi_map = dfphi_map_func(
             phi, self.geo.sens_names, self.geo.sens_map, cstrn=self.geo.cstrn

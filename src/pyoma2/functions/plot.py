@@ -1550,7 +1550,7 @@ def plt_data(
     fig, axs = plt.subplots(
         figsize=(8, 6), nrows=nr, ncols=nc, sharex=True, sharey=True, tight_layout=True
     )
-    fig.suptitle("Time Histories of all channels")
+    fig.suptitle("Time histories of all channels")
 
     kk = 0  # iterator for the dataset
     for ii in range(nr):
